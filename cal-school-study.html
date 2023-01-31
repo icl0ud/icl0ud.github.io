@@ -122,36 +122,46 @@ End Fixed Navigation
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h1>Bayesian Network Creation GUI</h1>
-        <img class="img-fluid mb-50" src="images/bayes_gui/Basic_Net.png" style="width: 75%; height: auto;">
+        <h1>Exploring Factors Affecting Secondary Education and Their Respective Trends</h1>
+        <img class="img-fluid mb-50" src="images/cal_schools/Student_Scores_vs_FRPM_Majority.png" style="width: 90%; height: auto; background-color: #555e6b;">
       </div>
       <div class="col-lg-12">
-        <p style="width: 70%;">What are the odds that you've come across my site?</p>
-        <p style="width: 70%;">Well, if I had some research, I could probably come up with a Bayesian Network (Bayes Net for short)
-          to help me figure that answer out. If you don't know what Bayes Nets are, they are a relatively simple
-        form of AI (not ML) that uses known or assumed probabilities to map directed relationships between nodes.</p>
-        <p style="width: 70%;">For example, let's say that you are on a hiring team, you are looking for software engineers,
-           you're looking for top talent, and that you have an attention span longer than just a few seconds.
-        All of those are factors which would play some sort of role that led you to my website! We could
-        diagram out all of these potential causes to actually answer the question above in a concrete, numerical outcome.
-          Neat, huh?</p>
-        <p>Moving on to the project details, I made a GUI that helps you frame the above example
-        visually and in a way that stores the information for multiple, easy lookups later! I will admit, this project
-        isn't as polished as I wanted it to be and that I did want to add in more quality-of-life features.
-        Unfortunately there is only so much time in the world. Regardless, I'm still proud of what I've created!</p>
-        <p style="width: 70%;">As the sole developer of this project, here's what I used to create this GUI:</p>
+        <p style="width: 70%;">It is now generally accepted that factors like household income serve as strong predictors for
+          student performance in schools. With this in mind, I think we can generally agree that it is not the sole
+        factor of relevance for such a complex topic.</p>
+        <p style="width: 70%;">In this study, I, alongside my partner, Khanh, delve into how California school districts and demographics
+        correlate with student performance and demographics. We wanted to explore how things like teacher salary, degree,
+        diversity, and district factors as a whole relate to student performance per district. We set out to find these
+        correlations to do two things: check in on the state of education from the lens of California, and set
+        groundwork for potential future research papers centered around education.</p>
+        <p style="width: 70%;">The focal point in our paper was around students which were eligible for free or reduced price
+        meals (we just list this group as FRPM) as well as districts in which a majority over the students were
+          considered FRPM. We worked datasets which were created from accumulating published information from
+          California's Department of Education regarding students, teachers, and schools. This information spans over
+          several topic areas, some being enrollment, assessment, and accountability.</p>
+        <p style="width: 70%;">Khanh and I found some mildly disturbing trends from the data. One easily visible example was
+          the sheer disparity between FRPM and non-FRPM [districts'] assessment performance where FRPM districts not only performed
+          worse, but they did so by significant margins. This is coupled with the fact that most districts in
+        California are FRPM and this ratio of FRPM to non-FRPM districts has not budged except for the outlier of when
+        the COVID-19 pandemic first swept the United States. Even then, it was still over 60%.
+          More so, things may get worse as the latest data shows a potential behavioral shift with a large jump in
+          suspensions and chronic absenteeism in students
+        post-pandemic. These combined findings that warrant further study as there may be a need for
+        some sort of intervention in the interest of education. </p>
+        <p style="width: 70%;">Khanh and I learned a lot while doing this project. The main platforms/concepts
+        I utilized during the project were:</p>
         <ul style="list-style-type: disc; margin-left: 3vw;">
+          <li>SQL</li>
           <li>Python</li>
-          <li>UX/UI Design Principles</li>
-          <li>Bayesian Probability Theory</li>
+          <li>NumPy</li>
+          <li>GCP BigQuery</li>
+          <li>Google Colab</li>
+          <li>Data Analysis</li>
         </ul>
-        <p class="mb-50" style="margin-top: 1vh;">Yup. That's it! Just some graphics and a lot of math. There's a better viewing of the GUI shown below.</p>
+        <p class="mb-50" style="margin-top: 1vh;">Here's some of the findings I discussed above in their visual form!</p>
         <div class="text-center">
-          <img class="img-fluid mb-30" src="images/bayes_gui/Example_Net.png" style="width: 75%; height: auto;">
-          <img class="img-fluid mb-30" src="images/bayes_gui/Example_P_Prob.png" style="width: 75%; height: auto;">
-          <img class="img-fluid mb-30" src="images/bayes_gui/Example_C_Prob.png" style="width: 75%; height: auto;">
-          <img class="img-fluid mb-30" src="images/bayes_gui/Example_Net_Finished.png" style="width: 75%; height: auto;">
-          <img class="img-fluid mb-30" src="images/bayes_gui/Example_Prob_Calc.png" style="width: 75%; height: auto;">
+          <img class="img-fluid mb-50" src="images/cal_schools/Percent_Districts_FRPM_Majority.png" style="width: 60%; height: auto; background-color: #555e6b;">
+          <img class="img-fluid" src="images/cal_schools/Absenteeism_vs_Suspensions.png" style="width: 60%; height: auto; background-color: #555e6b">
         </div>
       </div>
     </div>
