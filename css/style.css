@@ -213,27 +213,33 @@ a:hover {
 }
 
 .love p li a {
-    color: #ff9999;
+    color: #ff6961;
 }
 
 .love h1 h2 h3 h4 h5 h6 {
-    color: #ff9999;
+    color: #ff6961;
 }
 
 p.passion {
-  color: #e7adff;
+  color: #BA83D2;
 }
 
 a.passion {
-  color: #e7adff;
+  color: #BA83D2;
 }
 
 ul.passion {
-  color: #e7adff;
+  color: #BA83D2;
 }
 
 .passion {
-  color: #CF9FFF;
+  color: #E7ADFF;
+}
+
+.enhance-blue {
+  font-size: 18px;
+  color: #ddf;
+  font-weight: bold;
 }
 
 .sub-title {
@@ -1010,7 +1016,7 @@ a:hover {
 }
 .portfolio-filter button.active {
   border: 1px solid #ff9999;
-  color: #ff9999;
+  color: #ff6961;
 }
 
 .portfolio-items-wrapper .mix {
@@ -1023,7 +1029,7 @@ a:hover {
 }
 .portfolio-block:before {
   transition: all 0.3s ease-in-out;
-  background: rgb(255, 255, 255);
+  background: rgb(235, 225, 225);
   opacity: 0;
   top: 20px;
   right: 20px;
@@ -1056,7 +1062,8 @@ a:hover {
   transition: all 0.2s ease-in-out;
   text-align: center;
   width: 80%;
-  color: #ff7777;
+  color: #ff6961;
+  font-weight: bold;
 }
 .portfolio-block .caption h4 {
   font-size: 16px;
@@ -1095,6 +1102,14 @@ a:hover {
   font-size: 50px;
 }
 
+ul.passion {
+  color: #BA83D2;
+}
+
+.passion {
+  color: #E7ADFF;
+}
+
 /*=================================================================
   Services section 2
 ==================================================================*/
@@ -1110,7 +1125,7 @@ a:hover {
 }
 .service-2 .service-item:hover i {
   background: #fff;
-  color: #e7adff;
+  color: #BA83D2;
 }
 .service-2 .service-item i {
   font-size: 30px;
@@ -1145,7 +1160,7 @@ a:hover {
   border-radius: 0;
 }
 .skill-bar .progress .progress-bar {
-  background: #e7adff;
+  background: #BA83D2;
 }
 .skill-bar li:not(:last-child) {
   margin-bottom: 25px;
