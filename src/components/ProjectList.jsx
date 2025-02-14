@@ -16,10 +16,10 @@ export const ProjectList = () => {
             <ProjectCard 
                 title={"Bug or artistic feature: Scaling assessment and feedback of creative student-authored graphics programs"}
                 linkUrl={"CS229-paper.pdf"}
-                teamMembers={["M. Li*", "C. Mohne*", "C. Piech+"]}
-                award={"Nominated as one of four best papers"}
+                teamMembers={["M. Li*", "C. Mohne*", "C. Piech"]}
+                award={"Best project award"}
                 imageUrl={"CS229-graph.png"}
-                date={"CS 229: Machine Learning Final Project, 2024"}
+                date={"CS229: Machine Learning (Fall 2023)"}
             />
 
             <ProjectCard 
