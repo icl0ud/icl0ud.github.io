@@ -10,7 +10,7 @@ export const Header = () => {
             <Face imageUrl="me.jpg" />
             <div style={{display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "left"}}>
                 <h1 style={{marginBottom: "5px", color: "#ACD7EC"}}>Cameron Mohne</h1>
-                <h2 style={headerStyle}>M.S. Student at Stanford University</h2>
+                <h2 style={headerStyle}>Program Manager at Stanford University</h2>
                 <h3 style={headerStyle}>mohnec1@stanford.edu</h3>
                 <div style={{display: "flex", flexDirection: "row"}}>
                     <a href="https://github.com/icl0ud" aria-label="Github Link" target="_blank"><FaGithub style={{marginRight: "5px", fontSize:"xx-large", color: "#8B95C9"}}/></a>

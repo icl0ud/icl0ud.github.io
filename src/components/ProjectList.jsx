@@ -6,11 +6,14 @@ export const ProjectList = () => {
             <h1 style={{marginBottom: "5px", color: "#ACD7EC"}}>Papers and Projects</h1>
 
             <ProjectCard 
-                title={"EducaSim: Simulacra to Improve Teacher Readiness"}
-                description={"How can we better prepare teachers-in-training to teach without compromising classrooms? Classrooms are a superposition of many things happening simultaneously. Maybe we should have them learn by tasting fragments of such a complex world."}
-                teamMembers={["C. Mohne*", "N. Vo*", "D. Lee"]}
+                title={"EducaSim: Interactive Simulacra for Instructional Practice"}
+                linkUrl={"EducaSim-paper.pdf"}
+                // description={"How can we better prepare teachers-in-training to teach without compromising classrooms? Classrooms are a superposition of many things happening simultaneously. Maybe we should have them learn by tasting fragments of such a complex world."}
+                teamMembers={["C. Mohne*", "N. Vo*", "D. Demszky", "C. Piech"]}
+                award={"Prototype award"}
+                award2={"Research-to-Practice award"}
                 imageUrl={"EducaSim.jpg"}
-                date={"(Ongoing)"}
+                date={"2025"}
             />
 
             <ProjectCard 
