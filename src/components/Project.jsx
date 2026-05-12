@@ -3,6 +3,7 @@ import { FaStar } from "react-icons/fa";
 
 export const ProjectCard = ({
   title,
+  shortTitle,
   description,
   teamMembers,
   imageUrl,
@@ -21,39 +22,18 @@ export const ProjectCard = ({
     }
   };
 
+  const hasAward = Boolean(award || award2);
+
   const cardStyle = {
     display: "flex",
     alignItems: "center",
     border: "1px solid #ddd",
     borderRadius: "8px",
-    padding: "16px",
-    paddingTop: award || award2 ? "40px" : "16px",
     position: "relative",
     boxShadow: "0 2px 8px rgba(255, 255, 255, 0.5)",
     maxWidth: "800px",
     margin: "16px auto",
     backgroundColor: "#525174"
-  };
-
-  // Container that holds multiple badges
-  const badgeContainerStyle = {
-    position: "absolute",
-    top: "8px",
-    right: "8px",
-    display: "flex",
-    gap: "8px"
-  };
-
-  const badgeStyle = {
-    backgroundColor: "gold",
-    color: "black",
-    padding: "4px 8px",
-    borderRadius: "0 0 0 5px",
-    fontSize: "12px",
-    fontWeight: "bold",
-    display: "flex",
-    alignItems: "center",
-    gap: "4px"
   };
 
   const imageContainerStyle = {
@@ -89,17 +69,20 @@ export const ProjectCard = ({
   };
 
   return (
-    <div style={cardStyle} className="project-card">
+    <div
+      style={cardStyle}
+      className={`project-card${hasAward ? " has-award" : ""}`}
+    >
 
-      {(award || award2) && (
-        <div style={badgeContainerStyle}>
+      {hasAward && (
+        <div className="project-badges">
           {award && (
-            <div style={badgeStyle}>
+            <div className="project-badge">
               <FaStar /> {award}
             </div>
           )}
           {award2 && (
-            <div style={badgeStyle}>
+            <div className="project-badge">
               <FaStar /> {award2}
             </div>
           )}
@@ -121,7 +104,10 @@ export const ProjectCard = ({
           onClick={handleTitleClick}
           title={linkUrl ? "Show me more!" : "Tell me more!"}
         >
-          {title}
+          <span className="project-title-full">{title}</span>
+          {shortTitle && (
+            <span className="project-title-short">{shortTitle}</span>
+          )}
         </h2>
 
         {!linkUrl && showDescription && (

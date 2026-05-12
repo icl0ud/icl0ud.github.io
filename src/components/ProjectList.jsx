@@ -7,17 +7,19 @@ export const ProjectList = () => {
 
             <ProjectCard 
                 title={"EducaSim: Interactive Simulacra for Instructional Practice"}
-                linkUrl={"EducaSim-paper.pdf"}
+                shortTitle={"EducaSim"}
+                linkUrl={"https://arxiv.org/abs/2603.11444"}
                 // description={"How can we better prepare teachers-in-training to teach without compromising classrooms? Classrooms are a superposition of many things happening simultaneously. Maybe we should have them learn by tasting fragments of such a complex world."}
                 teamMembers={["C. Mohne*", "N. Vo*", "D. Demszky", "C. Piech"]}
-                award={"Prototype award"}
-                award2={"Research-to-Practice award"}
+                award={"Prototype award grant"}
+                award2={"Research-to-Practice award grant"}
                 imageUrl={"EducaSim.jpg"}
                 date={"2025"}
             />
 
             <ProjectCard 
                 title={"Bug or artistic feature: Scaling assessment and feedback of creative student-authored graphics programs"}
+                shortTitle={"Bug or artistic feature?"}
                 linkUrl={"CS229-paper.pdf"}
                 teamMembers={["M. Li*", "C. Mohne*", "C. Piech"]}
                 award={"Best project award"}
