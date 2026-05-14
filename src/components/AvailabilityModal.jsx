@@ -68,7 +68,7 @@ export const AvailabilityModal = () => {
                                     <li>
                                         Send a calendar invite to cameronmohne.cip@gmail.com
                                     </li>
-                                    <li>Check that this page has been updated (it may take a bit)</li>
+                                    <li>Check that this page has been updated (it may take a refresh)</li>
                                 </ol>
                             </aside>
                             <iframe
