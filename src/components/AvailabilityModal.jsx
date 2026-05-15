@@ -7,6 +7,12 @@ const CALENDAR_EMBED_URL = "https://calendar.google.com/calendar/embed?src=camer
 
 export const AvailabilityModal = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const [calendarSrc, setCalendarSrc] = useState("")
+
+    const openModal = () => {
+        setCalendarSrc(`${CALENDAR_EMBED_URL}&_=${Date.now()}`)
+        setIsOpen(true)
+    }
 
     useEffect(() => {
         if (!isOpen) return
@@ -30,7 +36,7 @@ export const AvailabilityModal = () => {
             <button
                 type="button"
                 className="availability-btn"
-                onClick={() => setIsOpen(true)}
+                onClick={openModal}
             >
                 View Availability
             </button>
@@ -73,7 +79,7 @@ export const AvailabilityModal = () => {
                             </aside>
                             <iframe
                                 className="calendar-iframe"
-                                src={CALENDAR_EMBED_URL}
+                                src={calendarSrc}
                                 title="My availability calendar"
                                 frameBorder="0"
                                 scrolling="no"

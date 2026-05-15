@@ -42,7 +42,7 @@ export const ProjectCard = ({
   };
 
   const imageStyle = {
-    width: "25vw",
+    width: "clamp(160px, 22vw, 280px)",
     height: "auto",
     borderRadius: "8px",
     objectFit: "cover"
